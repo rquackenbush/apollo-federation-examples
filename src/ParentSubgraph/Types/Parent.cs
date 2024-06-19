@@ -3,25 +3,23 @@
 namespace ApolloFederationRepro.Types
 {
     [Key("id")]
-    [GraphQLDescription("A thing.")]
-    public class Widget
+    public class Parent
     {
-        public Widget(string id, string name)
+        public Parent(string id, string name)
         {
             Id = id;
             Name = name;
         }
 
-        [GraphQLDescription("Id of the widget")]
         [ID]
         public string Id { get; set; }
 
         public string Name { get; set; }
 
         [ReferenceResolver]
-        public static Widget Get(string id)
+        public static Parent Get(string id)
         {
-            return new Widget("42", "Widget from Get");
+            return new Parent("42", "Parent from Get");
         }
     }
 }
