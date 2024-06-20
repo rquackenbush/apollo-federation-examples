@@ -3,8 +3,8 @@
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddGraphQLServer()
     .AddType<Child>()
+    .AddType<Parent>()
     .AddQueryType<Query>()
-    .AddTypeExtension<Parent>()
     .AddApolloFederationV2();
 
 builder

@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParentSubgraph", "ParentSubgraph\ParentSubgraph.csproj", "{0BF1F646-8D00-4295-8906-5FD0EB297ED4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChildSubgraph", "ChildSubgraph\ChildSubgraph.csproj", "{E896269F-BCC4-4E94-B3BB-B181657B0750}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChildSubgraph", "ChildSubgraph\ChildSubgraph.csproj", "{E896269F-BCC4-4E94-B3BB-B181657B0750}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

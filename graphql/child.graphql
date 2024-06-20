@@ -104,13 +104,13 @@ type Child {
   name: String!
 }
 
+type Parent {
+  children: [Child!]!
+  id: ID!
+}
+
 type Query {
   allChildren: [Child!]!
   _service: _Service!
   _entities(representations: [_Any!]!): [_Entity]!
-}
-
-type Parent {
-  children: [Child!]!
-  id: ID!
 }
