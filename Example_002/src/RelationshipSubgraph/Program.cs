@@ -5,6 +5,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services
     .AddGraphQLServer()
     .RegisterService<RelationshipRepository>()
+    .AddType<Foo>()
+    .AddType<Bar>()
     .AddQueryType<Query>()
     .AddMutationType<Mutation>()
     .AddApolloFederationV2();
