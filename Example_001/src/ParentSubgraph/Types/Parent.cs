@@ -1,4 +1,5 @@
 ﻿using ApolloGraphQL.HotChocolate.Federation;
+using ParentSubgraph.Data;
 
 namespace ApolloFederationRepro.Types
 {
@@ -12,14 +13,14 @@ namespace ApolloFederationRepro.Types
         }
 
         [ID]
-        public string Id { get; set; }
+        public string Id { get; }
 
-        public string Name { get; set; }
+        public string Name { get; }
 
         [ReferenceResolver]
-        public static Parent Get(string id)
+        public static Parent? Get(ParentRepository repository, string id)
         {
-            return new Parent("42", "Parent from Get");
+            return repository.GetParent(id);
         }
     }
 }
