@@ -1,0 +1,16 @@
+federation_version: =2.8.2
+subgraphs:
+
+  foo:
+    schema:
+      subgraph_url: http://localhost:7000/graphql
+
+  bar:
+    schema:
+      subgraph_url: http://localhost:7001/graphql
+
+  relationships:
+    schema:
+      subgraph_url: http://localhost:7002/graphql
+  
+ 
