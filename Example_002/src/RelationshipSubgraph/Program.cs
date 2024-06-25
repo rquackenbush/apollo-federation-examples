@@ -4,10 +4,10 @@ using RelationshipSubgraph.Types;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services
     .AddGraphQLServer()
-    .AddApolloFederationV2()
     .RegisterService<RelationshipRepository>()
     .AddQueryType<Query>()
-    .AddMutationType<Relationship>();
+    .AddMutationType<Mutation>()
+    .AddApolloFederationV2();
 
 
 builder

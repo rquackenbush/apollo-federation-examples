@@ -5,7 +5,7 @@ using FooSubgraph.Data;
 namespace FooSubgraph.Types
 {
     [Key("id")]
-    public class Foo //: IEntity
+    public class Foo : IEntity
     {
         public Foo(string id, string name)
         {

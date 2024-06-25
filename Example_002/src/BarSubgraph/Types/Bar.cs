@@ -5,7 +5,7 @@ using Common;
 namespace BarSubgraph.Types
 {
     [Key("id")]
-    public class Bar //: IEntity
+    public class Bar : IEntity
     {
         public Bar(string id, string name)
         {
