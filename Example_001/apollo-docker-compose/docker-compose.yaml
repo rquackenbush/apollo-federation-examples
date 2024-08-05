@@ -1,0 +1,10 @@
+services:
+  apollo:
+    image: ghcr.io/apollographql/router:v1.52.0
+    ports:
+      - "4000:4000"
+    command: ["--config", "/apollo-config/config.yaml", "--supergraph", "/apollo-config/supergraph.graphql", "--dev"]
+    volumes:
+      - ./apollo-config:/apollo-config
+  
+    
